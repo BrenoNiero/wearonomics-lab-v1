@@ -1,74 +1,153 @@
-# Wearonomics v1
+# Wearonomics Lab v1
 
-**Version 1.0 — Research Prototype**
+### A Human-Centric Validation and Ledger Framework for Wearable Movement Data
 
-Wearonomics v1 is a research framework designed to validate wearable movement data and translate verified human activity into structured analytical signals.
+Wearonomics Lab v1 is a reproducible research environment designed to validate wearable-derived movement data through transparent state-machine logic, physiological synchronization, and auditable ledger-based attribution systems.
 
-The system explores how human-generated data can be recognised through transparent economic attribution, where validated movement produces measurable credit aligned with real-world behaviour.
+The framework was developed to investigate how real-world wearable telemetry can be segmented, interpreted, and validated under explicit analytical conditions while preserving methodological transparency and reproducibility.
 
----
+Unlike conventional activity tracking systems that frequently rely on opaque classification models or aggregated session summaries, Wearonomics applies deterministic rule-based validation at segment level resolution. The system isolates locomotion from contamination events such as vehicle travel, pauses, vertical transport, and GPS artefacts using explicit and inspectable validation logic.
 
-## Research Problem
+This repository corresponds to the frozen v1 research baseline used in the preprint:
 
-Wearable devices continuously capture behavioural data, creating a rich stream of information about human movement and daily activity. However, the existence of data does not guarantee its reliability or meaning. In many cases, this data is not properly validated, leading to situations where movement is misclassified or distorted by noise, interruptions, or external factors such as transport. As a result, the true nature of human activity is often misunderstood.
+**Wearonomics: A Human-Centric Validation and Ledger Framework for Wearable Movement Data**
 
-At the same time, individuals who generate this data are rarely recognised for its underlying value. Despite contributing consistent behavioural signals, there is no clear system that validates, measures, and attributes this value back to them.
-
-Wearonomics addresses this gap by introducing a validation-first approach, where movement data is rigorously filtered and verified before analysis. This is combined with a ledger-based attribution model, ensuring that only validated activity is translated into measurable and accountable value.
+The repository contains the operational implementation of the validation architecture, including movement segmentation, state-machine classification, physiological synchronization, economic attribution logic, ledger generation, and reporting components.
 
 ---
 
-## Core Pipeline
+# Research Context
 
-Wearonomics operates through the following structure:
+Wearable devices increasingly influence digital health research, behavioural analytics, insurance systems, and population-level measurement frameworks. Despite widespread adoption, wearable datasets frequently contain contamination arising from transport events, signal instability, environmental distortion, and behavioural ambiguity.
 
-Wearable Data  
-↓  
-Validation Engine  
-↓  
-Movement Segmentation  
-↓  
-Anomaly Detection  
-↓  
-Economic Attribution  
-↓  
-Credit Ledger  
+Many existing approaches depend on black-box machine learning models or coarse aggregation methods that limit interpretability, auditability, and reproducibility.
 
-Only validated human movement contributes to the system.
+Wearonomics was developed as a transparent alternative.
+
+The framework investigates how wearable-derived movement data can be validated through explicit rule-based analytical systems capable of supporting reproducible computational science and future behavioural research environments.
 
 ---
 
-## Economic Attribution
+# Core Principles
 
-A central component of Wearonomics is the introduction of credit systems directly linked to verified human activity. Rather than treating wearable data as passive information, the model assigns measurable value only after movement has been validated, ensuring that the data reflects genuine behaviour.
+The framework is grounded in three central principles:
 
-This approach enables individuals to be recognised for the data they generate, transforming everyday activity into a form of accountable contribution. At the same time, it introduces behavioural incentives, where consistent and validated actions can be rewarded in a structured and transparent way.
+### Explicit Validation
 
-By establishing this connection between verified movement and value, Wearonomics opens pathways for practical applications across multiple domains, including health systems, where activity can support preventive care models, insurance frameworks that reward low-risk behaviour, and micro-credit systems that use validated data as a basis for financial inclusion.
+Movement classification is governed through transparent and parameterized state-machine logic. Validation assumptions remain visible, inspectable, and reproducible.
 
----
+### Physiological Synchronization
 
-## Repository Structure
+Heart rate and cadence signals are integrated as physiological plausibility layers supporting behavioural interpretation and auditability.
 
-- `validation_pipeline/` — movement validation logic  
-- `economic_model/` — credit attribution  
-- `system_architecture/` — pipeline design  
-- `sample_dataset/` — example datasets  
-- `paper/` — research publication  
-- `screenshots/`- system interface and outputs
+### Ledger Preservation
+
+Validated movement outcomes are preserved within cumulative temporal ledger structures designed to support reproducibility, longitudinal analysis, and transparent attribution models.
 
 ---
 
-## Status
+# Repository Structure
 
-This repository represents Version 1.0 of the Wearonomics Lab.
+validation_pipeline/
+Core validation logic, segmentation workflows, and state-machine architecture.
 
-A clean research prototype focused on validation methodology, economic attribution, and reproducible analytical outputs.
+economic_model/
+Deterministic attribution and ledger calculation modules.
+
+sample_dataset/
+Example wearable datasets and validation demonstrations.
+
+system_architecture/
+Framework structure, implementation diagrams, and validation flow documentation.
+
+paper/
+Research manuscript and publication materials.
+
+src/lib/
+Primary implementation modules including validation engine, control profiles, economics layer, and ledger generation.
 
 ---
 
-## Author
+# Validation Workflow
 
-Breno Niero  
-Data Scientist and Researcher  
+Raw GPX / FIT Dataset
+↓
+
+Movement Segmentation
+↓
+
+State-Machine Validation
+↓
+
+GPS Artefact Filtering
+↓
+
+Vehicle Persistence Detection
+↓
+
+Physiological Synchronization
+↓
+
+Validated Ledger Construction
+↓
+
+Structured Research Reporting
+
+---
+
+# Reproducibility
+
+Wearonomics Lab v1 operates as a deterministic validation environment.
+
+Identical datasets processed under identical validation profiles produce identical segment classifications, ledger outputs, validated durations, and attribution results.
+
+No hidden probabilistic classifiers or opaque decision systems are used within the validation architecture.
+
+All behavioural assumptions are encoded explicitly through transparent parameterized rules.
+
+This repository is maintained as a frozen research baseline to preserve consistency between the implementation and the results presented in the associated preprint manuscript.
+
+---
+
+# Current Research Focus
+
+Current work focuses on wearable-derived movement validation, behavioural continuity, longitudinal data quality, transparent activity classification, physiological plausibility analysis, reproducible wearable analytics, and auditable movement attribution systems.
+
+Future research directions include controlled behavioural studies, multi-device validation architectures, and transparent incentive frameworks designed to support sustained wearable participation under scientifically auditable conditions.
+
+Future developments are being explored separately under Wearonomics v2, focusing on broader wearable usability validation, continuous physiological monitoring, and longitudinal participation models. These future developments remain independent from the frozen v1 research baseline preserved in this repository.
+
+---
+
+# Research Publication
+
+**Wearonomics: A Human-Centric Validation and Ledger Framework for Wearable Movement Data**
+Breno Niero (2026)
+
+ResearchGate:
+https://www.researchgate.net/publication/401639284_Wearonomics_A_Human-Centric_Validation_and_Ledger_Framework_for_Wearable_Movement_Data
+
+---
+
+# Author
+
+Breno Niero
 Sydney, Australia
+
+Research Profile:
+https://www.researchgate.net/profile/Breno-Niero
+
+Website:
+https://www.brenoniero.com/research
+
+ORCID:
+https://orcid.org/0009-0005-0843-0114
+
+---
+
+# License
+
+CC BY-NC-ND 4.0
+
+This repository is shared for research, educational, and reproducibility purposes.
+
