@@ -97,7 +97,7 @@ Structured Research Reporting
 
 # Reproducibility
 
-Wearonomics Lab v1 operates as a deterministic validation environment.
+Wearonomics v1 operates as a deterministic validation environment.
 
 Identical datasets processed under identical validation profiles produce identical segment classifications, ledger outputs, validated durations, and attribution results.
 
